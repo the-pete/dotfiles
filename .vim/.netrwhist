@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='ftp://w-link.com/'
+let g:netrw_dirhist_2='ftp://administrator@w-link.com/'
+let g:netrw_dirhist_3='/home/pbaldridge/Documents/w-link'
+let g:netrw_dirhist_4='/etc/cron.d'
+let g:netrw_dirhist_5='/home/pbaldridge/Documents/howto'
+let g:netrw_dirhist_6='/home/pbaldridge/.config'
+let g:netrw_dirhist_7='/home/pbaldridge/Documents/w-link/fw'
+let g:netrw_dirhist_8='/home/pbaldridge/Documents/howto'
+let g:netrw_dirhist_9='/home/pbaldridge/working/linux/linux-3.17.1/Documentation/kbuild'
