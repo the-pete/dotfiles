@@ -43,11 +43,7 @@ alias sprunge='curl -F "sprunge=<-" http://sprunge.us'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-alias ndir='cd /var/named/pri'
-alias ftp="ftp -p"
-alias tegan.reboot='sudo systemctl reboot'
 alias du='du -h -d1|sort -h'
-alias ndir='su;cd /var/named/pri/'
 alias matrix="cmatrix -basC blue -u 6"
 alias clear='echo "Try ctl+l"'
 alias cachepkg="mv -v *.pkg.tar.xz ../cache/pkg"
