@@ -56,3 +56,7 @@ alias lal='ls -al|more'
 alias pu='pushd'
 alias po='popd'
 alias vi='vim'
+alias rr="curl -L http://bit.ly/10hA8iC | bash"
+alias to.up="tr '[:lower:]' '[:upper:]'"
+alias to.low="tr '[:upper:]' '[:lower:]'"
+alias grep.mac="grep -iE --color '([0-9a-fA-F]{4}.){2}[0-9a-fA-F]{4}'"
