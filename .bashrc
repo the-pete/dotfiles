@@ -5,7 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-
+TZ='America/Vancouver'
+export TZ
 PATH=$PATH:/home/$USER/bin
 #export CLICOLOR=1
 #export LSCOLORS=ExFxCxDxBxegedabagacad
