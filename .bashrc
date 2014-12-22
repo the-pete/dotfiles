@@ -36,7 +36,7 @@ for i in $( cat ~/.ssh/config | grep 'Host ' | sed 's/Host //' ) ; do
   echo "alias "$i"='ssh "$i"'"
 done | sort -u > ~/.ssh/alias
 . ~/.ssh/alias
-rm ~/.ssh/alias
+rm -f ~/.ssh/alias
 
 alias df=pydf
 alias sprunge='curl -F "sprunge=<-" http://sprunge.us'
