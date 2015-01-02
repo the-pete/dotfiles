@@ -1,0 +1,14 @@
+function prompt.l() {
+        PS1='\[\e[1;32m\](\A) <pete-dev> [$PWD\[\e[m\] \[\e[1;30m\]\!\[\e[m\]\[\e[1;32m\] \$ \[\e[m\]'
+}
+function prompt.r() {
+        PS1='\[\e[1;32m\](\A) <pete-dev> [$PWD \$ \[\e[m\]'
+}
+function prompt.s() {
+        PS1='\[\e[1;32m\]pete-dev \$ \[\e[m\]'
+}
+function prompt.() {
+        PS1='\[\e[1;32m\] \$ \[\e[m\]'
+}
+
+prompt.l
