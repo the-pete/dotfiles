@@ -62,3 +62,5 @@ alias to.low="tr '[:upper:]' '[:lower:]'"
 alias grep.mac="grep -iE --color '([0-9a-fA-F]{4}.){2}[0-9a-fA-F]{4}'"
 alias cgls='systemd-cgls'
 alias cgtop='systemd-cgtop'
+
+source .$HOSTNAME
