@@ -17,16 +17,16 @@ export HISTSIZE=10000
 export EDITOR='/usr/bin/vim'
 
 function prompt.l() {
-	PS1='\[\e[1;32m\](\A) <\h> [$PWD\[\e[m\] \[\e[1;30m\]\!\[\e[m\]\[\e[1;32m\] \$ \[\e[m\]'
+  PS1='\[\e[1;32m\](\A) <\h> [$PWD\[\e[m\] \[\e[1;30m\]\!\[\e[m\]\[\e[1;32m\] \$ \[\e[m\]'
 }
 function prompt.r() {
-	PS1='\[\e[1;32m\](\A) <\h> [$PWD \$ \[\e[m\]'
+  PS1='\[\e[1;32m\](\A) <\h> [$PWD \$ \[\e[m\]'
 }
 function prompt.s() {
-	PS1='\[\e[1;32m\]\h \$ \[\e[m\]'
+  PS1='\[\e[1;32m\]\h \$ \[\e[m\]'
 }
 function prompt.() {
-	PS1='\[\e[1;32m\] \$ \[\e[m\]'
+  PS1='\[\e[1;32m\] \$ \[\e[m\]'
 }
 
 prompt.l
