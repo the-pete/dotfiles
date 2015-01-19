@@ -1,0 +1,98 @@
+Host System Requirements	http://linuxfromscratch.org/lfs/view/stable-systemd/prologue/hostreqs.html	1414850865
+Prerequisites	http://linuxfromscratch.org/lfs/view/stable-systemd/prologue/prerequisites.html	1414854998
+Index of /pub/lfs/lfs-packages/7.6-rc1	http://ftp.lfs-matrix.net/pub/lfs/lfs-packages/7.6-rc1/	1414855065
+Index of /pub/lfs/lfs-packages	http://ftp.lfs-matrix.net/pub/lfs/lfs-packages/	1414855076
+Index of /pub/lfs	http://ftp.lfs-matrix.net/pub/lfs/	1414855077
+Download LFS	http://linuxfromscratch.org/lfs/download.html	1414855120
+2.5. Setting The $LFS Variable	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter02/aboutlfs.html	1414855179
+Chapter 3. Packages and Patches	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter03/chapter03.html	1414855182
+http://linuxfromscratch.org/lfs/view/stable-systemd/wget-list	http://linuxfromscratch.org/lfs/view/stable-systemd/wget-list	1414855539
+http://linuxfromscratch.org/lfs/view/stable-systemd/md5sums	http://linuxfromscratch.org/lfs/view/stable-systemd/md5sums	1414856595
+3.1. Introduction	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter03/introduction.html	1414856603
+3.2. All Packages	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter03/packages.html	1414856974
+Index of /patches/downloads	http://www.linuxfromscratch.org/patches/downloads/	1414858545
+3.3. Needed Patches	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter03/patches.html	1414858552
+Chapter 4. Final Preparations	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter04/chapter04.html	1414858559
+4.1. Introduction	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter04/introduction.html	1414858573
+4.3. Adding the LFS User	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter04/addinguser.html	1414859575
+4.4. Setting Up the Environment	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter04/settingenvironment.html	1414859946
+4.5. About SBUs	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter04/aboutsbus.html	1414871555
+4.6. About the Test Suites	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter04/abouttestsuites.html	1414871747
+Chapter 5. Constructing a Temporary System	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/chapter05.html	1414871862
+5.1. Introduction	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/introduction.html	1414872146
+[ubuntu] Too many levels of symbolic links at Ubuntu	http://bighow.net/38035328-_ubuntu__Too_many_levels_of_symbolic_links.html	1414887193
+[ubuntu] Too many levels of symbolic links	http://ubuntuforums.org/showthread.php?t=1922113	1414887205
+Symbolic Links - Finding Files	https://www.gnu.org/software/findutils/manual/html_node/find_html/Symbolic-Links.html	1414892401
+4.2. Creating the $LFS/tools Directory	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter04/creatingtoolsdir.html	1414892651
+Welcome to Linux From Scratch!	http://linuxfromscratch.org/	1414944886
+LFS Project Homepage	http://linuxfromscratch.org/lfs/	1414944895
+Read LFS Online	http://linuxfromscratch.org/lfs/read.html	1414944898
+5.2. Toolchain Technical Notes	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/toolchaintechnotes.html	1414946340
+5.3. General Compilation Instructions	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/generalinstructions.html	1414947935
+5.4. Binutils-2.24 - Pass 1	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/binutils-pass1.html	1414947947
+5.5. GCC-4.9.1 - Pass 1	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/gcc-pass1.html	1414949862
+5.6. Linux-3.16.2 API Headers	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/linux-headers.html	1414955461
+5.7. Glibc-2.20	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/glibc.html	1414956739
+5.8. Libstdc++-4.9.1	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/gcc-libstdc++.html	1414986233
+5.9. Binutils-2.24 - Pass 2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/binutils-pass2.html	1414986481
+Factor 0.97 now available | Hacker News	https://news.ycombinator.com/item?id=8548832	1414986808
+5.10. GCC-4.9.1 - Pass 2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/gcc-pass2.html	1415069758
+DuckDuckGo	https://duckduckgo.com/	1415159841
+nftables - ArchWiki	https://wiki.archlinux.org/index.php/Nftables	1415159871
+5.11. Tcl-8.6.2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/tcl.html	1415246219
+The Sixth Stage of Grief is Retro-Computing -- The Message -- Medium	https://medium.com/message/networks-without-networks-7644933a3100/	1415246286
+If you use a Mac or an Android, e-commerce sites may be charging you more - The Washington Post	http://www.washingtonpost.com/posteverything/wp/2014/11/03/if-you-use-a-mac-or-an-android-e-commerce-sites-may-be-charging-you-more/?tid=rssfeed	1415246378
+5.12. Expect-5.45	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/expect.html	1415247877
+5.13. DejaGNU-1.5.1	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/dejagnu.html	1415248283
+5.14. Check-0.9.14	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/check.html	1415248402
+5.15. Ncurses-5.9	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/ncurses.html	1415249386
+5.16. Bash-4.3	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/bash.html	1415249464
+5.17. Bzip2-1.0.6	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/bzip2.html	1415251845
+5.18. Coreutils-8.23	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/coreutils.html	1415252004
+5.19. Diffutils-3.3	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/diffutils.html	1415253417
+5.20. File-5.19	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/file.html	1415253702
+5.21. Findutils-4.4.2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/findutils.html	1415253852
+5.23. Gettext-0.19.2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/gettext.html	1415254297
+5.24. Grep-2.20	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/grep.html	1415255075
+5.25. Gzip-1.6	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/gzip.html	1415255396
+5.26. M4-1.4.17	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/m4.html	1415255865
+5.27. Make-4.0	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/make.html	1415256228
+5.28. Patch-2.7.1	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/patch.html	1415256514
+5.29. Perl-5.20.0	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/perl.html	1415257435
+5.30. Sed-4.2.2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/sed.html	1415258551
+5.31. Tar-1.28	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/tar.html	1415258763
+5.32. Texinfo-5.2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/texinfo.html	1415259513
+5.33. Util-linux-2.25.1	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/util-linux.html	1415259955
+5.34. Xz-5.0.5	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/xz.html	1415260466
+5.35. Stripping	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/stripping.html	1415260692
+5.36. Changing Ownership	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/changingowner.html	1415260863
+Part III. Building the LFS System	http://linuxfromscratch.org/lfs/view/stable-systemd/part3.html	1415307652
+Chapter 6. Installing Basic System Software	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/chapter06.html	1415309085
+6.1. Introduction	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/introduction.html	1415309099
+6.2. Preparing Virtual Kernel File Systems	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/kernfs.html	1415310418
+6.3. Package Management	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/pkgmgt.html	1415314293
+Page Not Found - Linux From Scratch	http://linuxfromscratch.org/~tushar/build-scripts/	1415314295
+6.4. Entering the Chroot Environment	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/chroot.html	1415314355
+6.5. Creating Directories	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/creatingdirs.html	1415314546
+6.6. Creating Essential Files and Symlinks	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/createfiles.html	1415316154
+6.7. Linux-3.16.2 API Headers	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/linux-headers.html	1415317420
+6.8. Man-pages-3.72	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/man-pages.html	1415317714
+Amazon Echo - Official site - Request an invitation	http://www.amazon.com/oc/echo	1415331081
+Amazon Echo | Hacker News	https://news.ycombinator.com/item?id=8567990	1415331094
+503 Service Temporarily Unavailable	http://www.benmilne.com/sometimes-just-go-home/	1415331189
+Sometimes, it's just time to go home | Hacker News	https://news.ycombinator.com/item?id=8570790	1415331198
+Amazon's Echo Chamber | Hacker News	https://news.ycombinator.com/item?id=8570805	1415331461
+klange/toaruos . GitHub	https://github.com/klange/toaruos	1415332181
+Hacker News	https://news.ycombinator.com/	1415376255
+5.22. Gawk-4.1.1	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter05/gawk.html	1415377739
+Fooled By Your Own Brain - Issue 19: Illusions - Nautilus	http://nautil.us/issue/19/illusions/fooled-by-your-own-brain-rd	1415377785
+Linux From Scratch	http://linuxfromscratch.org/lfs/view/stable-systemd/	1415377854
+6.9. Glibc-2.20	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/glibc.html	1415377874
+6.10. Adjusting the Toolchain	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/adjusting.html	1415379507
+6.11. Zlib-1.2.8	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/zlib.html	1415379722
+6.12. File-5.19	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/file.html	1415379840
+6.13. Binutils-2.24	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/binutils.html	1415380013
+6.14. GMP-6.0.0a	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/gmp.html	1415382035
+6.15. MPFR-3.1.2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/mpfr.html	1415384435
+6.16. MPC-1.0.2	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/mpc.html	1415417039
+6.17. GCC-4.9.1	http://linuxfromscratch.org/lfs/view/stable-systemd/chapter06/gcc.html	1415460072
