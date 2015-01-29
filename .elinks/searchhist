@@ -1,3 +1,0 @@
-gawk
-dev/null   -d $ZONEINFO       -y "sh yearistype.sh" ${tz}
-dev/null   -d $ZONEINFO/posix -y "sh yearistype.sh" ${tz}
