@@ -7,6 +7,7 @@
 
 TZ='America/Vancouver'
 export TZ
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 PATH=$PATH:/home/$USER/bin
 #export CLICOLOR=1
 #export LSCOLORS=ExFxCxDxBxegedabagacad
