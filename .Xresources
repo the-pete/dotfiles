@@ -1,12 +1,12 @@
  URxvt.perl-ext-common:		default,clipboard,url-select,keyboard-select,tabbed,matcher,url-select
- URxvt.url-select.launcher:	chromium
+ URxvt.url-select.launcher:	firefox
  URxvt.url-select.underline:	true
  URxvt.keysym.M-u:		perl:url-select:select_next
- URxvt.keysym.M-Escape:		erl:keyboard-select:activate
+ URxvt.keysym.M-Escape:		perl:keyboard-select:activate
  URxvt.keysym.M-s:		perl:keyboard-select:search
  URxvt.scrollBar: 		false
  URxvt.iconFile:    		~/.config/icons/general/gnome_terminal.png
- URxvt.url-launcher:      	/usr/bin/chromium
+ URxvt.url-launcher:      	/usr/bin/firefox
  URxvt.matcher.button:   	1
  URxvt.colorUL: 		#4682B4
  URxvt.keysym.C-C:		perl:clipboard:copy
