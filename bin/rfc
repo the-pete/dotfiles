@@ -1,0 +1,12 @@
+#!/bin/bash
+
+##################################################################################
+## This script is used to display rfc's in thier .txt version in a terminal.    ##
+## It is based on the file structure of the package extra/rfc in Arch Linux.    ##
+## The intent for this script would be to include search and read features.     ##
+##                                                                              ##
+## Writen by Pete Baldridge Sun Jan 29 13:04:39 PST 2012                        ##
+##                                                                              ##
+##################################################################################
+
+cat -n /usr/share/doc/rfc/txt/rfc$1.txt | less 
