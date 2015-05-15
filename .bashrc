@@ -30,7 +30,7 @@ function prompt.() {
   PS1='\[\e[1;32m\] \$ \[\e[m\]'
 }
 
-prompt.l
+prompt.
 
 #PROMPT_COMMAND="history -a; history -n"
 
@@ -64,3 +64,4 @@ alias cgls='systemd-cgls'
 alias cgtop='systemd-cgtop'
 
 source .$HOSTNAME
+alias chk.aw.cfg="awesome -k ~/.config/awesome/rc.lua"
