@@ -11,6 +11,7 @@
  URxvt.colorUL: 		#4682B4
  URxvt.keysym.C-C:		perl:clipboard:copy
  URxvt.keysym.C-V:		perl:clipboard:paste
+ URxvt*urgentOnBell:            true 
 
 *background: #222222
 *foreground: #797979
