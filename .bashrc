@@ -16,15 +16,20 @@ export IRCNICK
 export HISTCONTROL=ignorespace
 export HISTSIZE=10000
 export EDITOR='/usr/bin/vim'
+source .$HOSTNAME
+
+if [[ -z $HOSTALIAS ]] ; then
+  $HOSTALIAS=$HOSTNAME
+fi
 
 function prompt.l() {
-  PS1='\[\e[1;32m\](\A) <\h> [$PWD\[\e[m\] \[\e[1;30m\]\!\[\e[m\]\[\e[1;32m\] \$ \[\e[m\]'
+  PS1='\[\e[1;32m\](\A) <$HOSTALIAS> [$PWD\[\e[m\] \[\e[1;30m\]\!\[\e[m\]\[\e[1;32m\] \$ \[\e[m\]'
 }
 function prompt.r() {
-  PS1='\[\e[1;32m\](\A) <\h> [$PWD \$ \[\e[m\]'
+  PS1='\[\e[1;32m\](\A) <$HOSTALIAS> [$PWD \$ \[\e[m\]'
 }
 function prompt.s() {
-  PS1='\[\e[1;32m\]\h \$ \[\e[m\]'
+  PS1='\[\e[1;32m\]$HOSTALIAS \$ \[\e[m\]'
 }
 function prompt.() {
   PS1='\[\e[1;32m\] \$ \[\e[m\]'
@@ -63,5 +68,4 @@ alias grep.mac="grep -iE --color '([0-9a-fA-F]{4}.){2}[0-9a-fA-F]{4}'"
 alias cgls='systemd-cgls'
 alias cgtop='systemd-cgtop'
 
-source .$HOSTNAME
 alias chk.aw.cfg="awesome -k ~/.config/awesome/rc.lua"
