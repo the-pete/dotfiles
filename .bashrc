@@ -19,7 +19,7 @@ export EDITOR='/usr/bin/vim'
 source .$HOSTNAME
 
 if [[ -z $HOSTALIAS ]] ; then
-  $HOSTALIAS=$HOSTNAME
+  HOSTALIAS="$HOSTNAME"
 fi
 
 function prompt.l() {
