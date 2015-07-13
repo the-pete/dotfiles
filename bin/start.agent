@@ -1,0 +1,108 @@
+#!/bin/bash
+SSH_ENV="$HOME/.ssh/Agent-Socket-Info"
+AGENT_SOCKET="$HOME/.ssh/ssh-agent-socket"
+ADD_FILE="$HOME/.ssh/Add-to-Agent"
+IDENT_COUNT=$( wc -l "$ADD_FILE" )
+
+function lock () {
+  if [ -f "$HOME/.ssh/.agent-lock" ] ; then
+    echo "The ssh agent script is arlready running"
+    exit 1
+  else
+    touch "$HOME/.ssh/.agent-lock"
+  fi
+}
+function unlock () {
+  rm -f "$HOME/.ssh/.agent-lock"
+}
+
+
+function start_agent {
+  eval "$( ssh-agent -s -a "$AGENT_SOCKET" )"
+  echo "export SSH_AGENT_PID=$SSH_AGENT_PID" > "$SSH_ENV"
+  echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> "$SSH_ENV"
+  chmod 600 "$SSH_ENV"
+}
+
+function kill_agent {
+  while pgrep -U "$USER" ssh-agent &> /dev/null ; do
+    killall -u "$USER" ssh-agent
+    sleep 1
+  done
+}
+
+function add_ident () {
+  cd "$HOME/.ssh/"
+  for i in $( cat "$ADD_FILE" ) ; do
+    if !  ssh-add -l | grep "$i" > /dev/null ; then
+      ssh-add "$i"  && echo "Sucess!! $i added to Agent."
+    fi  
+  done
+}  
+ 
+function test_ident {
+  if ssh-add -l | grep "The agent has no identities" &> /dev/null ; then
+    add_ident
+    if [ "$( ssh-add -l | wc -l )" == "$IDENT_COUNT" ] ; then
+      return "0"
+      logger "All identities added to ssh agent"
+    else
+      return "1"
+    fi  
+  fi  
+}
+
+function main {
+  cd  
+  lock
+  if [ "$( pgrep -U $USER ssh-agent | wc -l )" -lt 1 ] ; then
+    start_agent
+    add_ident
+    test_ident
+  elif [ $( pgrep -U "$USER" ssh-agent | wc -l ) -eq 1 ] ; then
+    if [ $( pgrep -U "$USER" ssh-agent ) -eq "$SSH_AGENT_PID" ] ; then
+      if grep "$SSH_AGENT_PID" "$SSH_ENV" ; then
+        test_ident
+      else
+        echo "export SSH_AGENT_PID=$SSH_AGENT_PID" > "$SSH_ENV"
+        echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> "$SSH_ENV"
+      fi  
+    elif 
+      grep $( pgrep -U "$USER" ssh-agent ) "$SSH_ENV" &>/dev/null  ; then
+      . "$SSH_ENV"
+      test_ident ; echo $?
+      if [ "$ident_added" -eq 1 ] ; then
+        kill_agent
+        start_agent
+        add_ident
+        test_ident
+      fi
+    else
+      SSH_AUTH_SOCK=$( ls -al /tmp/ssh-*/* | grep "$USER" | awk '{ print $9 }' )
+      test_ident
+      if [ "$IDENT_ADDED" -eq 0 ]; then
+        echo "export SSH_AGENT_PID=$SSH_AGENT_PID" > "$SSH_ENV"
+        echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> "$SSH_ENV"
+        chmod 600 "$SSH_ENV"
+      else
+        kill_agent
+        start_agent
+        add_ident
+        test_ident
+      fi
+    fi
+  else
+    for i in $( pgrep -U "$USER" ssh-agent ) ; do
+      if grep "$i" "$SSH_ENV" ; then
+        . "$SSH_ENV"
+        test_ident
+      else
+        kill -9 "$i"
+      fi
+    done
+  fi
+  unlock
+}
+
+main
+. "$SSH_ENV"
