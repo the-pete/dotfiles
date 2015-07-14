@@ -1,4 +1,22 @@
 #!/bin/sh
+
+##############################################################################
+#
+# Change the author and remove an incrrect or auto generated email from 
+#   commit messages.
+#
+#  1. Push changes to origin
+#  2. Create a fresh bare clone of the repo:
+#     git clone --bare ssh:repo
+#  3. Run this script, add the email to purge
+#  4. push to github with
+#     git push --force --tags origin 'refs/heads/*'
+#  5. Review for errors in git history
+#  6. Pull to old repo
+#  7. rm -rf old repo
+#
+##############################################################################
+
  
 git filter-branch --env-filter '
 
