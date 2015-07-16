@@ -1,0 +1,7 @@
+text/html;	links %s; nametemplate=%s.html
+text/html;	links -dump %s; nametemplate=%s.html; copiousoutput
+application/ms-tnef; tnef -w %s
+application/pdf;	pdftotext %s -; copiousoutput
+application/msword; catdoc %s; copiousoutput
+text/calendar; mutt-ical.py -i -e "pbaldrid@amazon.com" %s
+text/calendar; dump-ical.py %s ; copiousoutput
