@@ -1,0 +1,12 @@
+#!/bin/bash
+STATUSFILE=$( date +'%Y%m%d' )
+
+cd ~/.dsr
+if [ -f $STATUSFILE ] ; then
+  vim $STATUSFILE
+else
+  touch $STATUSFILE
+  echo Subject: pbaldrid DSR $( date +'%Y%m%d' ) > $STATUSFILE
+  echo >> $STATUSFILE
+  vim $STATUSFILE
+fi

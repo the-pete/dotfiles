@@ -1,0 +1,8 @@
+#!/bin/bash
+IMAGELIB="$HOME/.imagelib/"
+scrot "$IMAGELIB/ss.png"
+convert -blur 0x3 "$IMAGELIB/ss.png" "$IMAGELIB/lock-blur.png"
+convert -gravity center -composite "$IMAGELIB/lock-blur.png" "$IMAGELIB/overlay.png" "$IMAGELIB/lockfinal.png"
+i3lock -i "$IMAGELIB/lockfinal.png" &
+shred "$IMAGEDIR/ss.png"
+rm "$IMAGELIB/ss.png"
