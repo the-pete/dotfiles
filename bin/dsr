@@ -1,12 +1,24 @@
 #!/bin/bash
 STATUSFILE=$( date +'%Y%m%d' )
 
-cd ~/.dsr
-if [ -f $STATUSFILE ] ; then
-  vim $STATUSFILE
+cd ~/.dsr || echo "Daily status Directory Doesn't exist" || exit
+if [ -f "$STATUSFILE" ] ; then
+  vim "$STATUSFILE"
 else
-  touch $STATUSFILE
-  echo Subject: pbaldrid DSR $( date +'%Y%m%d' ) > $STATUSFILE
-  echo >> $STATUSFILE
-  vim $STATUSFILE
+  touch "$STATUSFILE"
+  read -p "Would you like to read your last status report? [y/n] " YorN
+  if [[ $YorN =~ [Yy] ]] ; then
+    less $( cat last.file )
+  fi
+  read -p "Would you like to copy pending and ongoing tickets to todays report [y/n]" COPY
+  echo Subject: pbaldrid DSR $( date +'%Y%m%d' ) > "$STATUSFILE"
+  echo >> "$STATUSFILE"
+  echo -e "Resolved:\n\n" >> "$STATUSFILE"
+  if [[ "$COPY" =~ [Yy] ]] ; then
+    grep -A5000 -m1 -e 'Pending, Ongoing and Tracking:' $( cat last.file ) >> "$STATUSFILE"
+  else
+    echo -e "Pending, Ongoing and Tracking:\n\n" >> "$STATUSFILE"
+  fi
+  echo "$STATUSFILE" > last.file
+  vim "$STATUSFILE"
 fi
