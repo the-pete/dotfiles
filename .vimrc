@@ -74,5 +74,3 @@ set nolist
 set textwidth=0
 set wrapmargin=0
 set mouse=a
-let g:calendar_google_calendar = 1
-let g:calendar_google_task = 1
