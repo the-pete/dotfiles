@@ -1,4 +1,4 @@
- URxvt.perl-ext-common:		default,clipboard,url-select,keyboard-select,tabbed,matcher,url-select
+ URxvt.perl-ext-common:		default,clipboard,url-select,keyboard-select,matcher,url-select
  URxvt.url-select.launcher:	firefox
  URxvt.url-select.underline:	true
  URxvt.keysym.M-u:		perl:url-select:select_next
