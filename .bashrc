@@ -45,6 +45,16 @@ done | sort -u > ~/.ssh/alias
 . ~/.ssh/alias
 rm -f ~/.ssh/alias
 
+function agent-connect () {
+  if grep $( pgrep ssh-agent ) ~/.ssh/Agent-Socket-Info > /dev/null ; then 
+    . ~/.ssh/Agent-Socket-Info
+  else
+    start.agent
+    . .ssh/Agent_Socket_info
+  fi
+}
+agent-connect
+
 alias df=pydf
 alias sprunge='curl -F "sprunge=<-" http://sprunge.us'
 alias rm='rm -i'
@@ -67,5 +77,5 @@ alias to.low="tr '[:upper:]' '[:lower:]'"
 alias grep.mac="grep -iE --color '([0-9a-fA-F]{4}.){2}[0-9a-fA-F]{4}'"
 alias cgls='systemd-cgls'
 alias cgtop='systemd-cgtop'
-
 alias chk.aw.cfg="awesome -k ~/.config/awesome/rc.lua"
+
