@@ -1,7 +1,9 @@
 #!/bin/bash
 IMAGELIB="$HOME/.imagelib/"
+notify-send -u normal -t 500 "Locking Screen"
+sleep .5
 scrot "$IMAGELIB/ss.png"
-convert -blur 0x3 "$IMAGELIB/ss.png" "$IMAGELIB/lock-blur.png"
+convert -blur 0x4 "$IMAGELIB/ss.png" "$IMAGELIB/lock-blur.png"
 convert -gravity center -composite "$IMAGELIB/lock-blur.png" "$IMAGELIB/overlay.png" "$IMAGELIB/lockfinal.png"
 i3lock -i "$IMAGELIB/lockfinal.png" &
 shred "$IMAGEDIR/ss.png"
