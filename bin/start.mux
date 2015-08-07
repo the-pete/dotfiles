@@ -1,0 +1,24 @@
+#-------------------------------------------------------------------------
+# Process the password file first
+#-------------------------------------------------------------------------
+
+tmux -2 start-server
+
+#Start the session and compose the control window:
+
+tmux new-session -d -s HP-Gary -n "Control" 'htop;bash -i'
+tmux split-window -t 0.0 -h -p 65 'mutt;bash -i'
+tmux split-window -t 0.1 -v -p 20 'bash -i'
+tmux split-window -t 0.2 -h -p 30 'bash -i'
+tmux split-window -t 0.0 -v -p 30 'bash -i'
+tmux split-window -t 0.0 -v -p 60 'irssi;bash -i'
+
+tmux new-session -d -t HP-Gary -s left
+tmux new-session -d -t HP-Gary -s right
+tmux new-session -d -t HP-Gary -s misc
+#select windows and connect:
+tmux selectw -t 0 
+tmux selectp -t 1
+tmux attach-session -t HP-Gary 
+
+#
